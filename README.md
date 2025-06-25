@@ -1,52 +1,43 @@
-# resume-screening-assistant
-A Watsonx.ai-based project to classify resumes into job categories using prompt engineering and foundation models.
-# 🤖 Resume Screening Assistant (with Classifier)
+# 🤖 Resume Screening Assistant
 
-This interactive machine learning project classifies resumes into job categories:
-- Data Science
-- Software Development
-- Human Resources
-- UI/UX Design
+An interactive machine learning project that classifies resumes into job categories:
 
-It uses:
-- `ipywidgets` for user input
-- `TfidfVectorizer` + `Naive Bayes` with Binary Relevance
-- `matplotlib` + `seaborn` for confidence plotting
+- 📊 Data Science  
+- 💻 Software Development  
+- 🧑‍💼 Human Resources  
+- 🎨 UI/UX Design  
 
----
-
-## ▶️ Try it in Google Colab
-
-Click below to open this notebook in Google Colab:
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR-USERNAME/resume-screening-assistant/blob/main/resume_classifier.ipynb)
+This project uses:
+- `TfidfVectorizer` for feature extraction
+- `Naive Bayes` with Binary Relevance (Multi-label classification)
+- `ipywidgets` for an interactive interface
+- `matplotlib` for plotting confidence levels
 
 ---
 
-## 📦 Installation
+## ▶️ Open in Google Colab
 
-To install dependencies:
+Click the button below to try the project instantly in Google Colab:
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/harika1827/resume-screening-assistant/blob/main/resume_classifier.ipynb)
+
+---
+
+## 🚀 How to Use
+
+1. Paste your resume text into the input box  
+2. Adjust the threshold using the slider (e.g., 0.4)  
+3. Click the **"Classify Resume"** button  
+4. View the predicted job categories and confidence scores  
+5. See a chart of probabilities for each job type  
+
+---
+
+## 📦 Installation (for local use)
+
+To run this on your local system:
 
 ```bash
+git clone https://github.com/harika1827/resume-screening-assistant.git
+cd resume-screening-assistant
 pip install -r requirements.txt
-
-✅ Replace `YOUR-USERNAME` with your actual GitHub username, e.g., `harika1827`.
-
----
-
-### ⬆️ 4. **Upload to GitHub**
-
-1. Go to [https://github.com/new](https://github.com/new)
-2. Create a new repo named `resume-screening-assistant`
-3. On your PC:
-   - Open VS Code or terminal
-   - Run:
-
-   ```bash
-   cd path/to/resume-screening-assistant
-   git init
-   git add .
-   git commit -m "Initial upload of resume classifier project"
-   git branch -M main
-   git remote add origin https://github.com/harika1827/resume-screening-assistant.git
-   git push -u origin main
