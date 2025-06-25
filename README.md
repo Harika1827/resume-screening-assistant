@@ -29,3 +29,24 @@ To install dependencies:
 
 ```bash
 pip install -r requirements.txt
+
+✅ Replace `YOUR-USERNAME` with your actual GitHub username, e.g., `harika1827`.
+
+---
+
+### ⬆️ 4. **Upload to GitHub**
+
+1. Go to [https://github.com/new](https://github.com/new)
+2. Create a new repo named `resume-screening-assistant`
+3. On your PC:
+   - Open VS Code or terminal
+   - Run:
+
+   ```bash
+   cd path/to/resume-screening-assistant
+   git init
+   git add .
+   git commit -m "Initial upload of resume classifier project"
+   git branch -M main
+   git remote add origin https://github.com/harika1827/resume-screening-assistant.git
+   git push -u origin main
